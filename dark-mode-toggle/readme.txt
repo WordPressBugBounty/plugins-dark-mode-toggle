@@ -5,7 +5,7 @@ Donate link: https://scriptstown.com/
 Requires at least: 5.3
 Tested up to: 6.6
 Requires PHP: 7.0
-Stable tag: 1.4.6
+Stable tag: 1.4.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,11 +13,11 @@ Bring dark mode toggle switch to your WordPress website. A simple switch to turn
 
 == Description ==
 
-**Dark Mode Toggle** is an excellent WordPress plugin to quickly add a dark / night mode toggle switch button on your WordPress site. The users can easily switch between a dark or light scheme by clicking on the toggle button. It is ready to use dark mode plugin that works out of the box and is compatible with all WordPress themes and offers many options to customize the position, width, height, and border radius of the toggle button. This plugin is very lightweight with minimal footprints. Using the plugin, you can also skip dark mode on any specific elements of your website. It improves user experience and it is very fast and easy to use.
+**Dark Mode Toggle** is an excellent WordPress plugin that allows you to quickly add a dark / night mode toggle switch button to your WordPress site. The plugin enables users or visitors to easily switch between a dark or light scheme by clicking on the simple toggle button. It is ready to use dark mode plugin that works out of the box and is compatible with all WordPress themes. It has a settings page with various options to customize or change the position, width, height, and border radius of the toggle button. It is a very lightweight plugin with minimal footprints. With this plugin, you can also skip or exclude dark mode on any specific elements of your website. It improves the user experience and it is fast and easy to use.
 
-Dark mode can improve the accessibility and readability of your WordPress website. A dark background with light-colored text can reduce eye strain and fatigue for many people who are sensitive to bright screens. This is the best dark mode WordPress plugin that allows site visitors to switch between light and dark modes easily. This caters to different visual needs and preferences. Also, it will save and persist the user's choice for the next page refresh. This avoids having to manually switch modes on every new page load.
+**Dark mode plugin** can improve the accessibility and readability of a WordPress website. Having a dark background with light-colored text can reduce eye strain and fatigue for many people who are sensitive to bright screens. This is the best dark mode WordPress plugin that allows site visitors to switch between light and dark modes easily. It caters to different visual needs and preferences. Plus, the plugin can save and persist the user’s choice for the next page refresh. It remembers the choice for the next page visit to avoid manually switching modes on every new page load.
 
-This dark mode plugin has simple settings, works well with all modern browsers, and offers very high compatibility with all WordPress themes as well as any page builder plugins. It quickly changes the colors and also works great for the dark themes to toggle the light mode on the dark themes.
+This dark mode plugin has simple settings, works well with all modern browsers, and provides high compatibility with all WordPress themes as well as any page builder plugins. It quickly changes the colors and also works great for darker themes to toggle the light mode on the dark themes.
 
 ### Dark Mode Toggle Features
 
@@ -84,6 +84,9 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.4.7 =
+* Readme updated.
 
 = 1.4.6 =
 * Tested up to 6.6.2.
