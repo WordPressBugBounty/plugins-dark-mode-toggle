@@ -2,36 +2,41 @@
 # This file is distributed under the same license as the Dark Mode Toggle plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Dark Mode Toggle 1.4.8\n"
+"Project-Id-Version: Dark Mode Toggle 1.4.9\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dark-mode-toggle\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-10-22T22:39:31+00:00\n"
+"POT-Creation-Date: 2024-12-07T13:42:46+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.8.1\n"
+"X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: dark-mode-toggle\n"
 
 #. Plugin Name of the plugin
+#: dark-mode-toggle.php
 #: inc/settings/index.php:18
 msgid "Dark Mode Toggle"
 msgstr ""
 
 #. Plugin URI of the plugin
+#: dark-mode-toggle.php
 msgid "https://scriptstown.com/wordpress-plugins/dark-mode-toggle/"
 msgstr ""
 
 #. Description of the plugin
+#: dark-mode-toggle.php
 msgid "Bring dark mode toggle switch to your WordPress website. A simple switch to turn on and off the dark mode. Fast and easy to use."
 msgstr ""
 
 #. Author of the plugin
+#: dark-mode-toggle.php
 msgid "ScriptsTown"
 msgstr ""
 
 #. Author URI of the plugin
+#: dark-mode-toggle.php
 msgid "https://scriptstown.com/"
 msgstr ""
 
