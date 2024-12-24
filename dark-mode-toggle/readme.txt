@@ -5,8 +5,8 @@ Donate link: https://scriptstown.com/
 Requires at least: 5.3
 Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 1.4.9
-License: GPLv2 or later
+Stable tag: 1.5.0
+License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 Bring dark mode toggle switch to your WordPress website. A simple switch to turn on and off the dark mode. Fast and easy to use.
@@ -84,6 +84,9 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.5.0 =
+* Code improvements.
 
 = 1.4.9 =
 * Tested compatibility with PHP 8.4.
