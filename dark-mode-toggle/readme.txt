@@ -5,7 +5,7 @@ Donate link: https://scriptstown.com/
 Requires at least: 5.3
 Tested up to: 6.7
 Requires PHP: 7.0
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -84,6 +84,9 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.5.1 =
+* Added composer.json.
 
 = 1.5.0 =
 * Code improvements.
