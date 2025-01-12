@@ -54,8 +54,8 @@
 
 			document.getElementsByClassName( 'darkmode-toggle' )[0].onclick = ( function () { this.toggleGlobalStyles() } ).bind( this );
 
-			const darkmode = window.localStorage['darkmode'];
-			if ( this.config.saveInCookies && ( 'true' === darkmode ) ) {
+			const darkmode = window.localStorage.getItem( 'darkmode' );
+			if ( ( this.config.saveInCookies && ( 'true' === darkmode ) ) || ( this.config.autoMatchOsTheme && ( null === darkmode ) && window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches ) ) {
 				this.toggleGlobalStyles();
 			} else {
 				this.removeBackground();
@@ -76,8 +76,8 @@
 		},
 
 		toggleGlobalStyles: function() {
-			const modestate = window.localStorage['darkmode'];
-			if ( this.config.saveInCookies && ( 'true' === modestate ) ) {
+			const modestate = window.localStorage.getItem( 'darkmode' );
+			if ( ( this.config.saveInCookies && ( 'true' === modestate ) ) || ( this.config.autoMatchOsTheme && ( null === modestate ) && window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches ) ) {
 				this.addBackground();
 			} else {
 				this.removeBackground();
