@@ -80,6 +80,7 @@ export default class Darkmode {
         left: ${options.left};
         top: ${options.top};
         font-size: ${options.fontSize} !important;
+        font-family: sans-serif;
         font-weight: 600;
         line-height: 1 !important;
         cursor: pointer;
