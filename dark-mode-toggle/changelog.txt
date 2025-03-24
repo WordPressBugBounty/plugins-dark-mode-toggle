@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.5.4 =
+* Code improvements.
+* Readme updated.
+
 = 1.5.3 =
 * Improvement: CSS fixes.
 
