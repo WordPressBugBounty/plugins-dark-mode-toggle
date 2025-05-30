@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.5.7 =
+* Improvement: CSS fixes.
+
 = 1.5.6 =
 * Tested up to 6.8.1.
 * Readme updated.

@@ -52,7 +52,7 @@ export default class Darkmode {
 
       .darkmode-layer--simple {
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         top: 0;
         left: 0;
         transform: scale(1) !important;
@@ -117,7 +117,7 @@ export default class Darkmode {
         pointer-events: none;
         z-index: -10;
         width: 100%;
-        height: 100vh;
+        height: 120vh;
         top: 0;
         left: 0;
       }
