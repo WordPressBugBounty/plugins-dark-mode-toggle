@@ -60,15 +60,15 @@ class Utility extends Base implements Service {
 
 			wp_register_script( 'darkmodetg-fade', '', array(), false, false ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.NoExplicitVersion
 			wp_enqueue_script( 'darkmodetg-fade' );
-			wp_add_inline_script( 'darkmodetg-fade', '("true"===window.localStorage.darkmode)&&document.documentElement.classList.add("dmtg-fade");' );
+			wp_add_inline_script( 'darkmodetg-fade', '("true" === window.localStorage.getItem("darkmode")) && document.documentElement.classList.add("dmtg-fade");' );
 		}
 
 		if ( ! $advanced[ $key ]['override'] ) {
-			$css .= '.darkmode--activated embed,.darkmode--activated iframe,.darkmode--activated img,.darkmode--activated video{filter:invert(100%)}.darkmode--activated embed:fullscreen,.darkmode--activated iframe:fullscreen,.darkmode--activated video:fullscreen{filter:invert(0%)}';
+			$css .= '.darkmode--activated embed,.darkmode--activated iframe,.darkmode--activated img,.darkmode--activated video{filter:invert(100%)}.darkmode--activated embed:fullscreen,.darkmode--activated iframe:fullscreen,.darkmode--activated video:fullscreen,.darkmode--activated .darkmode-toggle img.emoji{filter:invert(0%)}';
 
 			$css .= '.darkmode--activated [style*="background-image: url"],.darkmode--activated [style*="background-image:url"]{filter:invert(100%)}';
 
-			$css_cover = '.darkmode--activated .wp-block-cover[style*="background-image: url"] .wp-block-cover[style*="background-image: url"],.darkmode--activated .wp-block-cover[style*="background-image: url"] .wp-block-cover[style*="background-image:url"],.darkmode--activated .wp-block-cover[style*="background-image: url"] embed,.darkmode--activated .wp-block-cover[style*="background-image: url"] figure[class*=wp-duotone-],.darkmode--activated .wp-block-cover[style*="background-image: url"] iframe,.darkmode--activated .wp-block-cover[style*="background-image: url"] img,.darkmode--activated .wp-block-cover[style*="background-image: url"] video,.darkmode--activated .wp-block-cover[style*="background-image:url"] .wp-block-cover[style*="background-image: url"],.darkmode--activated .wp-block-cover[style*="background-image:url"] .wp-block-cover[style*="background-image:url"],.darkmode--activated .wp-block-cover[style*="background-image:url"] embed,.darkmode--activated .wp-block-cover[style*="background-image:url"] figure[class*=wp-duotone-],.darkmode--activated .wp-block-cover[style*="background-image:url"] iframe,.darkmode--activated .wp-block-cover[style*="background-image:url"] img,.darkmode--activated .wp-block-cover[style*="background-image:url"] video{filter:invert(0)}.darkmode--activated figure[class*=wp-duotone-]{filter:invert(1)}';
+			$css_cover = '.darkmode--activated .wp-block-cover[style*="background-image: url"] .wp-block-cover[style*="background-image: url"],.darkmode--activated .wp-block-cover[style*="background-image: url"] .wp-block-cover[style*="background-image:url"],.darkmode--activated .wp-block-cover[style*="background-image: url"] embed,.darkmode--activated .wp-block-cover[style*="background-image: url"] figure[class*=wp-duotone-],.darkmode--activated .wp-block-cover[style*="background-image: url"] iframe,.darkmode--activated .wp-block-cover[style*="background-image: url"] img,.darkmode--activated .wp-block-cover[style*="background-image: url"] video,.darkmode--activated .wp-block-cover[style*="background-image:url"] .wp-block-cover[style*="background-image: url"],.darkmode--activated .wp-block-cover[style*="background-image:url"] .wp-block-cover[style*="background-image:url"],.darkmode--activated .wp-block-cover[style*="background-image:url"] embed,.darkmode--activated .wp-block-cover[style*="background-image:url"] figure[class*=wp-duotone-],.darkmode--activated .wp-block-cover[style*="background-image:url"] iframe,.darkmode--activated .wp-block-cover[style*="background-image:url"] img,.darkmode--activated .wp-block-cover[style*="background-image:url"] video{filter:invert(0)}.darkmode--activated figure[class*=wp-duotone-],.darkmode--activated .swp-compact-cover-container{filter:invert(1)}';
 
 			$css .= apply_filters( 'darkmodetg_css_cover', $css_cover );
 
@@ -148,17 +148,18 @@ class Utility extends Base implements Service {
 						'width'             => esc_attr( $options['width'] ),
 						'height'            => esc_attr( $options['height'] ),
 						'borderRadius'      => esc_attr( $options['border_r'] ),
-						'fontSize'          => '16px',
+						'fontSize'          => '18px',
 						'time'              => esc_attr( $advanced['time'] ),
 						'backgroundColor'   => 'transparent',
-						'buttonColorDark'   => '#333333',
-						'buttonColorLight'  => '#b3b3b3',
-						'buttonColorTDark'  => '#ffffff',
-						'buttonColorTLight' => '#000000',
+						'buttonColorLight'  => '#656565',
+						'buttonColorTLight' => '#eeeeee',
+						'buttonColorDark'   => '#4f4f4f',
+						'buttonColorTDark'  => '#cacaca',
 						'saveInCookies'     => esc_attr( $advanced['save'] ),
 						'fixFlick'          => esc_attr( $options['fix_flick'] ),
-						'label'             => esc_attr( \wp_encode_emoji( '🔥' ) ),
+						'label'             => esc_attr( \wp_encode_emoji( '☀️' ) ),
 						'autoMatchOsTheme'  => false,
+						'onDefault'         => false,
 						'buttonAriaLabel'   => esc_attr__( 'Toggle dark mode', 'dark-mode-toggle' ),
 						'overrideStyles'    => esc_attr( $advanced[ $key ]['override'] ),
 					),

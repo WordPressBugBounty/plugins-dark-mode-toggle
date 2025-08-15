@@ -1,5 +1,10 @@
 == Changelog ==
 
+= 1.5.9 =
+* Changed default options.
+* Code improvements.
+* Tested up to 6.8.2.
+
 = 1.5.8 =
 * Code improvements.
 * Readme updated.

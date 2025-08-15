@@ -47,12 +47,12 @@ class Options extends Base implements Service {
 	 * Get option value based on an option name.
 	 *
 	 * @param string $option Name of the option to retrieve.
-	 * @param mixed  $default Default value to return if the option does not exist.
+	 * @param mixed  $value Default value to return if the option does not exist.
 	 *
 	 * @return mixed
 	 */
-	public function get_option( $option, $default = false ) {
-		return \get_option( $option, $default );
+	public function get_option( $option, $value = false ) {
+		return \get_option( $option, $value );
 	}
 
 	/**
@@ -126,9 +126,9 @@ class Options extends Base implements Service {
 						'pos_t'          => 32,
 						'pos_l'          => 32,
 						'pos_r'          => 32,
-						'width'          => 44,
-						'height'         => 44,
-						'border_r'       => 44,
+						'width'          => 40,
+						'height'         => 40,
+						'border_r'       => 40,
 						'in_head'        => false,
 						'fix_flick'      => true,
 						'flick_bg_color' => '#000000',

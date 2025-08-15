@@ -39,24 +39,27 @@
 				time: config.time,
 				mixColor: '#fff',
 				backgroundColor: config.backgroundColor,
-				buttonColorDark: config.buttonColorDark,
 				buttonColorLight: config.buttonColorLight,
-				buttonColorTDark: config.buttonColorTDark,
 				buttonColorTLight: config.buttonColorTLight,
+				buttonColorDark: config.buttonColorDark,
+				buttonColorTDark: config.buttonColorTDark,
 				saveInCookies: config.saveInCookies,
 				fixFlick: config.fixFlick,
 				label: config.label,
 				autoMatchOsTheme: config.autoMatchOsTheme,
+				onDefault: config.onDefault,
 				buttonAriaLabel: config.buttonAriaLabel
 			}
 
 			new Darkmode( options ).showWidget();
 
-			document.getElementsByClassName( 'darkmode-toggle' )[0].onclick = ( function () { this.toggleGlobalStyles() } ).bind( this );
+			document.getElementsByClassName( 'darkmode-toggle' )[0].onclick = ( function () { this.toggleBackground() } ).bind( this );
 
-			const darkmode = window.localStorage.getItem( 'darkmode' );
-			if ( ( this.config.saveInCookies && ( 'true' === darkmode ) ) || ( this.config.autoMatchOsTheme && ( null === darkmode ) && window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches ) ) {
-				this.toggleGlobalStyles();
+			if ( document.body.classList.contains('darkmode--activated') ) {
+				this.addBackground();
+				if ( this.config.fixFlick ) {
+					document.documentElement.classList.remove('dmtg-fade');
+				}
 			} else {
 				this.removeBackground();
 			}
@@ -69,22 +72,13 @@
 			[].forEach.call( els, function( el ) {
 				el.style.zIndex = '999999';
 			} );
-
-			if ( ( this.config.saveInCookies || this.config.autoMatchOsTheme ) && this.config.fixFlick ) {
-				document.documentElement.classList.remove('dmtg-fade');
-			}
 		},
 
-		toggleGlobalStyles: function() {
-			const modestate = window.localStorage.getItem( 'darkmode' );
-			if ( ( this.config.saveInCookies && ( 'true' === modestate ) ) || ( this.config.autoMatchOsTheme && ( null === modestate ) && window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches ) ) {
+		toggleBackground: function() {
+			if ( document.body.classList.contains('darkmode--activated') ) {
 				this.addBackground();
 			} else {
 				this.removeBackground();
-			}
-
-			if ( ( this.config.saveInCookies || this.config.autoMatchOsTheme ) && this.config.fixFlick ) {
-				document.documentElement.classList.remove('dmtg-fade');
 			}
 		},
 

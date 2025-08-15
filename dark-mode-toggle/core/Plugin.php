@@ -20,10 +20,9 @@ class Plugin {
 	 */
 	public static function services() {
 		$services = array(
-			'utility'     => Utility::class,
-			'options'     => Options::class,
-			'enqueue'     => Enqueue::class,
-			'translation' => Translation::class,
+			'utility' => Utility::class,
+			'options' => Options::class,
+			'enqueue' => Enqueue::class,
 		);
 
 		if ( is_admin() ) {

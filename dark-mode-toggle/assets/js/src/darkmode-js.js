@@ -11,20 +11,21 @@ export default class Darkmode {
       right: '32px',
       left: 'unset',
       top: 'unset',
-      width: '44px',
-      height: '44px',
-      borderRadius: '44px',
-      fontSize: '16px',
+      width: '40px',
+      height: '40px',
+      borderRadius: '40px',
+      fontSize: '18px',
       time: '0s',
       mixColor: '#fff',
       backgroundColor: 'transparent',
-      buttonColorDark: '#333333',
-      buttonColorLight: '#b3b3b3',
-      buttonColorTDark: '#ffffff',
-      buttonColorTLight: '#000000',
+      buttonColorLight: '#656565',
+      buttonColorTLight: '#eeeeee',
+      buttonColorDark: '#4f4f4f',
+      buttonColorTDark: '#cacaca',
       label: '',
       saveInCookies: true,
-      autoMatchOsTheme: true,
+      autoMatchOsTheme: false,
+      onDefault: false,
       buttonAriaLabel: 'Toggle dark mode'
     };
 
@@ -95,16 +96,16 @@ export default class Darkmode {
       .darkmode-toggle:focus,
       .darkmode-toggle:active {
         box-shadow: none !important;
-        background: ${options.buttonColorDark};
-        color: ${options.buttonColorTDark};
+        background: ${options.buttonColorLight};
+        color: ${options.buttonColorTLight};
       }
 
       .darkmode-toggle--white,
       .darkmode-toggle--white:hover,
       .darkmode-toggle--white:focus,
       .darkmode-toggle--white:active {
-        background: ${options.buttonColorLight};
-        color: ${options.buttonColorTLight};
+        background: ${options.buttonColorDark};
+        color: ${options.buttonColorTDark};
       }
 
       .darkmode-toggle--inactive {
@@ -146,8 +147,9 @@ export default class Darkmode {
     const darkmodeNeverActivatedByAction = ( null === window.localStorage.getItem('darkmode') );
 
     if (
-      (darkmodeActivated === true && options.saveInCookies) ||
-      (darkmodeNeverActivatedByAction && preferedThemeOs)
+      (options.saveInCookies && (true === darkmodeActivated)) ||
+      (options.saveInCookies && darkmodeNeverActivatedByAction && (options.onDefault || preferedThemeOs)) ||
+      (!options.saveInCookies && (options.onDefault || preferedThemeOs))
     ) {
       layer.classList.add(
         'darkmode-layer--expanded',
