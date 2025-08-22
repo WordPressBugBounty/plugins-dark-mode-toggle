@@ -148,7 +148,7 @@ $front = darkmodetg( 'options' )->get_main( 'front' );
 				<div class="dmt-form-control dmt-mb-3">
 					<label for="dmt-width" class="dmt-label"><span class="dmt-label-text"><?php esc_html_e( 'Width for Toggle Button:', 'dark-mode-toggle' ); ?></span></label>
 					<label class="dmt-input-group">
-						<input name="width" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 48', 'dark-mode-toggle' ); ?>" id="dmt-width" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['width'] ); ?>">
+						<input name="width" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 44', 'dark-mode-toggle' ); ?>" id="dmt-width" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['width'] ); ?>">
 						<span><?php esc_html_e( 'pixels', 'dark-mode-toggle' ); ?></span>
 					</label>
 					<label class="dmt-label">
@@ -160,7 +160,7 @@ $front = darkmodetg( 'options' )->get_main( 'front' );
 				<div class="dmt-form-control dmt-mb-3">
 					<label for="dmt-height" class="dmt-label"><span class="dmt-label-text"><?php esc_html_e( 'Height for Toggle Button:', 'dark-mode-toggle' ); ?></span></label>
 					<label class="dmt-input-group">
-						<input name="height" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 48', 'dark-mode-toggle' ); ?>" id="dmt-height" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['height'] ); ?>">
+						<input name="height" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 44', 'dark-mode-toggle' ); ?>" id="dmt-height" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['height'] ); ?>">
 						<span><?php esc_html_e( 'pixels', 'dark-mode-toggle' ); ?></span>
 					</label>
 					<label class="dmt-label">
@@ -172,7 +172,7 @@ $front = darkmodetg( 'options' )->get_main( 'front' );
 				<div class="dmt-form-control dmt-mb-3">
 					<label for="dmt-border_r" class="dmt-label"><span class="dmt-label-text"><?php esc_html_e( 'Border Radius for Toggle Button:', 'dark-mode-toggle' ); ?></span></label>
 					<label class="dmt-input-group">
-						<input name="border_r" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 48', 'dark-mode-toggle' ); ?>" id="dmt-border_r" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['border_r'] ); ?>">
+						<input name="border_r" type="number" min="0" step="1" placeholder="<?php esc_attr_e( 'Example: 44', 'dark-mode-toggle' ); ?>" id="dmt-border_r" class="dmt-input dmt-input-bordered dmt-w-full" value="<?php echo esc_attr( $front['border_r'] ); ?>">
 						<span><?php esc_html_e( 'pixels', 'dark-mode-toggle' ); ?></span>
 					</label>
 					<label class="dmt-label">

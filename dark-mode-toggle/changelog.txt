@@ -1,5 +1,8 @@
 == Changelog ==
 
+= 1.6.0 =
+* Code improvements.
+
 = 1.5.9 =
 * Changed default options.
 * Code improvements.
