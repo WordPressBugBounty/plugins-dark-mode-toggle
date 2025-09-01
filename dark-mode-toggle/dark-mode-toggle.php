@@ -3,7 +3,7 @@
  * Plugin Name: Dark Mode Toggle
  * Plugin URI: https://scriptstown.com/wordpress-plugins/dark-mode-toggle/
  * Description: Bring dark mode toggle switch to your WordPress website. A simple switch to turn on and off the dark mode. Fast and easy to use.
- * Version: 1.6.0
+ * Version: 1.6.1
  * Author: ScriptsTown
  * Author URI: https://scriptstown.com/
  * License: GPL v2 or later
@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'DARKMODETG_PLUGIN_VER', '1.6.0' );
+define( 'DARKMODETG_PLUGIN_VER', '1.6.1' );
 define( 'DARKMODETG_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 define( 'DARKMODETG_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
 define( 'DARKMODETG_PLUGIN_BASE', plugin_basename( __FILE__ ) );

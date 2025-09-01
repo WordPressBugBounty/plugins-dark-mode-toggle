@@ -3,7 +3,7 @@ Contributors: scriptstown
 Tags: dark mode, dark, dark theme, night mode, toggle
 Donate link: https://scriptstown.com/
 Tested up to: 6.8
-Stable tag: 1.6.0
+Stable tag: 1.6.1
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -49,6 +49,7 @@ This dark mode plugin has simple settings, works well with all modern browsers, 
 * Well-Coded, **Fast** and Lightweight
 * Separate Options for Front and Admin
 * Many Advanced Options for Customization
+* Option to Turn On **Dark Mode By Default**
 * Auto-Match OS Theme on Initial Load
 
 **Dark Mode Toggle Pro** offers additional features like switchable custom button labels, font sizes, and toggle button colors. You can even set any **custom** button for toggling the dark mode. It offers dark mode on admin pages as well. Plus, it can auto-matches the OS theme on initial load.
@@ -82,6 +83,9 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.6.1 =
+* Readme updated.
 
 = 1.6.0 =
 * Code improvements.
