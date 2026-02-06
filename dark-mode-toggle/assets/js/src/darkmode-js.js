@@ -69,6 +69,7 @@ export default class Darkmode {
       }
 
       .darkmode-toggle {
+        min-width: unset;
         width: ${options.width};
         height: ${options.height};
         position: fixed;

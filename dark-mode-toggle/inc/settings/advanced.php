@@ -1,4 +1,4 @@
-<?php // phpcs:ignore WordPress.Files.FileName.NotHyphenatedLowercase
+<?php // phpcs:disable WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound -- File is loaded within a function, variables are not global.
 /**
  * Advanced settings.
  *

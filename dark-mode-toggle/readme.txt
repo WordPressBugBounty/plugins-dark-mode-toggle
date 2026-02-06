@@ -2,8 +2,8 @@
 Contributors: scriptstown
 Tags: dark mode, dark, dark theme, night mode, toggle
 Donate link: https://scriptstown.com/
-Tested up to: 6.8
-Stable tag: 1.6.1
+Tested up to: 6.9
+Stable tag: 1.6.5
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,21 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.6.5 =
+* Improvement: CSS fixes.
+* Readme updated.
+
+= 1.6.4 =
+* Readme updated.
+
+= 1.6.3 =
+* Tested compatibility with PHP 8.5.
+* Readme updated.
+
+= 1.6.2 =
+* Code improvements.
+* Tested up to 6.9.
 
 = 1.6.1 =
 * Readme updated.
@@ -264,32 +279,3 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 
 = 1.1.0 =
 * Tested up to 6.0.
-
-= 1.0.8 =
-* Added: Option to skip dark mode on the body background image.
-
-= 1.0.7 =
-* Improvement: Disable dark mode for video and iframe.
-
-= 1.0.6 =
-* Improvement: Remove toggle button from customize preview.
-
-= 1.0.5 =
-* Improvement: Changed default width and height of toggle button.
-* Improvement: Changed toggle button icon.
-
-= 1.0.4 =
-* Improvement: Skip block embeds in dark mode.
-
-= 1.0.3 =
-* New: Added option to save user's choice.
-
-= 1.0.2 =
-* New: Added welcome notice on activation.
-* New: Added action link.
-
-= 1.0.1 =
-* Readme updated.
-
-= 1.0.0 =
-* New release.

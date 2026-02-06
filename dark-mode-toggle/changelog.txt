@@ -1,5 +1,20 @@
 == Changelog ==
 
+= 1.6.5 =
+* Improvement: CSS fixes.
+* Readme updated.
+
+= 1.6.4 =
+* Readme updated.
+
+= 1.6.3 =
+* Tested compatibility with PHP 8.5.
+* Readme updated.
+
+= 1.6.2 =
+* Code improvements.
+* Tested up to 6.9.
+
 = 1.6.1 =
 * Readme updated.
 
