@@ -76,7 +76,7 @@ export default class Darkmode {
         padding: 0 !important;
         margin: 0;
         border-radius: ${options.borderRadius} !important;
-        border:none;
+        border: none;
         right: ${options.right};
         bottom: ${options.bottom};
         left: ${options.left};
@@ -86,7 +86,7 @@ export default class Darkmode {
         font-weight: 600;
         line-height: 1 !important;
         cursor: pointer;
-        transition: all 0.5s ease;
+        transition: none;
         display: flex;
         justify-content: center;
         align-items: center;

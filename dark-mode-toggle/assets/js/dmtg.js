@@ -70,7 +70,7 @@
 			}
 			const els = document.querySelectorAll( selector );
 			[].forEach.call( els, function( el ) {
-				el.style.zIndex = '999999';
+				el.style.zIndex = '9999999';
 			} );
 		},
 
