@@ -55,7 +55,9 @@ export default class Darkmode {
         width: 100%;
         height: 120vh;
         top: 0;
+        bottom: 0;
         left: 0;
+        right: 0;
         transform: scale(1) !important;
       }
 
@@ -135,9 +137,11 @@ export default class Darkmode {
 
     const layer = document.createElement('div');
     const button = document.createElement('button');
+    const span = document.createElement('span');
     const background = document.createElement('div');
 
-    button.innerHTML = options.label;
+    span.innerHTML = options.label;
+    button.appendChild(span);
     button.classList.add('darkmode-toggle--inactive');
     layer.classList.add('darkmode-layer');
     background.classList.add('darkmode-background');
@@ -171,6 +175,7 @@ export default class Darkmode {
     this.addStyle(css);
 
     this.button = button;
+    this.span = span;
     this.layer = layer;
     this.saveInCookies = options.saveInCookies;
     this.time = options.time;

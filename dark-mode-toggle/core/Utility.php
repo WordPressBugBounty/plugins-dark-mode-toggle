@@ -64,7 +64,9 @@ class Utility extends Base implements Service {
 		}
 
 		if ( ! $advanced[ $key ]['override'] ) {
-			$css .= '.darkmode--activated embed,.darkmode--activated iframe,.darkmode--activated img,.darkmode--activated video{filter:invert(100%)}.darkmode--activated embed:fullscreen,.darkmode--activated iframe:fullscreen,.darkmode--activated video:fullscreen,.darkmode--activated .darkmode-toggle img.emoji{filter:invert(0%)}';
+			$css .= '.darkmode--activated embed,.darkmode--activated iframe,.darkmode--activated img,.darkmode--activated video{filter:invert(100%)}.darkmode--activated .darkmode-toggle img.emoji{filter:invert(0%)}';
+
+			$css .= '.darkmode--activated embed:fullscreen,.darkmode--activated iframe:fullscreen,.darkmode--activated video:fullscreen{filter:invert(0%)}';
 
 			$css .= '.darkmode--activated [style*="background-image: url"],.darkmode--activated [style*="background-image:url"]{filter:invert(100%)}';
 
