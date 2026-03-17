@@ -39,7 +39,6 @@ export default class Darkmode {
         transition: all ${options.time} ease;
         mix-blend-mode: difference;
       }
-
       .darkmode-layer--button {
         width: ${options.width};
         height: ${options.height};
@@ -50,7 +49,6 @@ export default class Darkmode {
         top: ${options.top};
         transform: scale(0.98);
       }
-
       .darkmode-layer--simple {
         width: 100%;
         height: 120vh;
@@ -60,16 +58,13 @@ export default class Darkmode {
         right: 0;
         transform: scale(1) !important;
       }
-
       .darkmode-layer--expanded {
         transform: scale(100);
         border-radius: 0;
       }
-
       .darkmode-layer--no-transition {
         transition: none;
       }
-
       .darkmode-toggle {
         min-width: unset;
         width: ${options.width};
@@ -88,12 +83,11 @@ export default class Darkmode {
         font-weight: 600;
         line-height: 1 !important;
         cursor: pointer;
-        transition: none;
+        transition: .3s background-color ease;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
       .darkmode-toggle,
       .darkmode-toggle:hover,
       .darkmode-toggle:focus,
@@ -102,7 +96,6 @@ export default class Darkmode {
         background: ${options.buttonColorLight};
         color: ${options.buttonColorTLight};
       }
-
       .darkmode-toggle--white,
       .darkmode-toggle--white:hover,
       .darkmode-toggle--white:focus,
@@ -110,11 +103,9 @@ export default class Darkmode {
         background: ${options.buttonColorDark};
         color: ${options.buttonColorTDark};
       }
-
       .darkmode-toggle--inactive {
         display: none;
       }
-
       .darkmode-background {
         background: ${options.backgroundColor};
         position: fixed;
@@ -125,13 +116,25 @@ export default class Darkmode {
         top: 0;
         left: 0;
       }
-
       img, .darkmode-ignore {
         isolation: isolate;
       }
-
       @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         .darkmode-toggle {display: none !important}
+      }
+      .darkmode-toggle span {
+        display: contents;
+      }
+      .darkmode-toggle img.emoji {
+        display: inline;
+        border: none;
+        box-shadow: none;
+        height: 1em;
+        width: 1em;
+        margin: 0 0.07em;
+        vertical-align: -0.1em;
+        background: none;
+        padding: 0;
       }
     `;
 

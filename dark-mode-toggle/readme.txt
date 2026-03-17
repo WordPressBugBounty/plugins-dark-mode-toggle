@@ -3,7 +3,7 @@ Contributors: scriptstown
 Tags: dark mode, dark, dark theme, night mode, toggle
 Donate link: https://scriptstown.com/
 Tested up to: 7.0
-Stable tag: 1.6.8
+Stable tag: 1.6.9
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,9 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.6.9 =
+* Improvement: Toggle button.
 
 = 1.6.8 =
 * Improvement: CSS fixes.
