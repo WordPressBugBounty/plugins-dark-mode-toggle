@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.7.1 =
+* Readme updated.
+* Tested compatibility with PHP 8.5.5.
+
 = 1.7.0 =
 * Improvement: CSS fixes.
 * Readme updated.
