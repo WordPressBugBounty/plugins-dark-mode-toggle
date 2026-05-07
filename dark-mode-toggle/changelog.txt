@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.7.2 =
+* Improvement: Settings page.
+* Readme updated.
+
 = 1.7.1 =
 * Readme updated.
 * Tested compatibility with PHP 8.5.5.
