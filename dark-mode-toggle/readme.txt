@@ -3,7 +3,7 @@ Contributors: scriptstown
 Tags: dark mode, dark, dark theme, night mode, toggle
 Donate link: https://scriptstown.com/
 Tested up to: 7.0
-Stable tag: 1.7.2
+Stable tag: 1.7.3
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,7 +32,7 @@ This dark mode plugin has simple settings, works well with all modern browsers, 
 * Save User Choice on Next Page Refresh
 * Fast and Easy to Setup and Use
 
-**Upgrade To Pro - <a href="https://scriptstown.com/wordpress-plugins/dark-mode-toggle-pro/#pricing" title="Upgrade To Pro">Click Here</a>**
+**Upgrade To Pro - <a href="https://scriptstown.com/wordpress-plugins/dark-mode-toggle-pro/#pricing" title="Get Pro Version">Get Pro Version</a>**
 
 ### Dark Mode Toggle Pro Features
 
@@ -54,7 +54,7 @@ This dark mode plugin has simple settings, works well with all modern browsers, 
 
 **Dark Mode Toggle Pro** offers additional features like switchable custom button labels, font sizes, and toggle button colors. You can even set any **custom** button for toggling the dark mode. It offers dark mode on admin pages as well. Plus, it can auto-matches the OS theme on initial load.
 
-**Check Pro Plugin - <a href="https://scriptstown.com/wordpress-plugins/dark-mode-toggle-pro/" title="Check Pro Plugin">Click Here</a>**
+**Check Pro Plugin - <a href="https://scriptstown.com/wordpress-plugins/dark-mode-toggle-pro/" title="View Pro Features">View Pro Features</a>**
 
 == Installation ==
 
@@ -83,6 +83,10 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.7.3 =
+* Readme updated.
+* Tested compatibility with PHP 8.5.6.
 
 = 1.7.2 =
 * Improvement: Settings page.
