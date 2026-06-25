@@ -3,7 +3,7 @@ Contributors: scriptstown
 Tags: dark mode, dark, dark theme, night mode, toggle
 Donate link: https://scriptstown.com/
 Tested up to: 7.0
-Stable tag: 1.7.3
+Stable tag: 1.7.4
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -83,6 +83,10 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 3. Dark / Night Mode Toggle Switch
 
 == Changelog ==
+
+= 1.7.4 =
+* Code improvements.
+* Readme updated.
 
 = 1.7.3 =
 * Readme updated.
@@ -275,35 +279,3 @@ You can add an additional filter CSS class: **dmt-filter-1** or **dmt-filter-0**
 = 1.2.0 =
 * Readme updated.
 * Darkmode library updated.
-
-= 1.1.9 =
-* Improvement: Default settings.
-
-= 1.1.8 =
-* Improvement: More CSS specificity for better compatibility with themes.
-
-= 1.1.7 =
-* Improvement: Turn on transition effect by default.
-
-= 1.1.6 =
-* Readme updated.
-
-= 1.1.5 =
-* Tested up to 6.1.1.
-* Tested compatibility with PHP 8.1.
-
-= 1.1.4 =
-* Tested up to 6.1.
-
-= 1.1.3 =
-* Improvement: Do not load CSS when hide on mobile.
-* Tested up to 6.0.2.
-
-= 1.1.2 =
-* Tested up to 6.0.1.
-
-= 1.1.1 =
-* Readme updated.
-
-= 1.1.0 =
-* Tested up to 6.0.
