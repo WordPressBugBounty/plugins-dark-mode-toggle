@@ -1,5 +1,10 @@
 == Changelog ==
 
+= 1.7.6 =
+* Tested up to 7.1.2.
+* Tested compatibility with PHP 8.5.10.
+* Readme updated.
+
 = 1.7.5 =
 * Tested up to 7.1.
 
