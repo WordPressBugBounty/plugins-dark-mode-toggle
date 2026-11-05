@@ -29,7 +29,7 @@ class Settings extends Base implements Service {
 	 * Save front form settings.
 	 */
 	public function save_front() {
-		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( \wp_unslash( $_POST['nonce'] ) ) : '';
+		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
 		if ( ! wp_verify_nonce( $nonce, 'front-settings' ) ) {
 			die();
@@ -42,8 +42,8 @@ class Settings extends Base implements Service {
 		$default = darkmodetg( 'options' )->get_default_main( 'front' );
 
 		$enable         = array_key_exists( 'enable', $_POST ) ? ( (bool) $_POST['enable'] ) : false;
-		$pos            = array_key_exists( 'pos', $_POST ) ? sanitize_text_field( \wp_unslash( $_POST['pos'] ) ) : $default['pos'];
-		$pos            = darkmodetg( 'options' )->sanitize_pos( $pos );
+		$pos            = array_key_exists( 'pos', $_POST ) ? sanitize_text_field( wp_unslash( $_POST['pos'] ) ) : $default['pos'];
+		$pos            = darkmodetg( 'options' )->sanitize_pos( $pos, 'front' );
 		$pos_b          = array_key_exists( 'pos_b', $_POST ) ? ( (int) $_POST['pos_b'] ) : $default['pos_b'];
 		$pos_t          = array_key_exists( 'pos_t', $_POST ) ? ( (int) $_POST['pos_t'] ) : $default['pos_t'];
 		$pos_l          = array_key_exists( 'pos_l', $_POST ) ? ( (int) $_POST['pos_l'] ) : $default['pos_l'];
@@ -53,7 +53,7 @@ class Settings extends Base implements Service {
 		$border_r       = array_key_exists( 'border_r', $_POST ) ? absint( $_POST['border_r'] ) : $default['border_r'];
 		$in_head        = array_key_exists( 'in_head', $_POST ) ? ( (bool) $_POST['in_head'] ) : false;
 		$fix_flick      = array_key_exists( 'fix_flick', $_POST ) ? ( (bool) $_POST['fix_flick'] ) : false;
-		$flick_bg_color = array_key_exists( 'flick_bg_color', $_POST ) ? sanitize_hex_color( \wp_unslash( $_POST['flick_bg_color'] ) ) : $default['flick_bg_color'];
+		$flick_bg_color = array_key_exists( 'flick_bg_color', $_POST ) ? sanitize_hex_color( wp_unslash( $_POST['flick_bg_color'] ) ) : $default['flick_bg_color'];
 		$skip_bg_img    = array_key_exists( 'skip_bg_img', $_POST ) ? ( (bool) $_POST['skip_bg_img'] ) : false;
 
 		$value = array(
@@ -87,7 +87,7 @@ class Settings extends Base implements Service {
 	 * Save advanced form settings.
 	 */
 	public function save_advanced() {
-		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( \wp_unslash( $_POST['nonce'] ) ) : '';
+		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
 		if ( ! wp_verify_nonce( $nonce, 'advanced-settings' ) ) {
 			die();
@@ -151,7 +151,7 @@ class Settings extends Base implements Service {
 	 * Reset settings.
 	 */
 	public function reset() {
-		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( \wp_unslash( $_POST['nonce'] ) ) : '';
+		$nonce = array_key_exists( 'nonce', $_POST ) ? sanitize_text_field( wp_unslash( $_POST['nonce'] ) ) : '';
 
 		if ( ! wp_verify_nonce( $nonce, 'reset-settings' ) ) {
 			die();

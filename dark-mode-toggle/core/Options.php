@@ -198,10 +198,10 @@ class Options extends Base implements Service {
 		$key = 'front';
 
 		$this->options_main[ $key ]['enable']         = (bool) $this->options_main[ $key ]['enable'];
-		$this->options_main[ $key ]['pos']            = $this->sanitize_pos( $this->options_main[ $key ]['pos'] );
+		$this->options_main[ $key ]['pos']            = $this->sanitize_pos( $this->options_main[ $key ]['pos'], $key );
 		$this->options_main[ $key ]['pos_b']          = (int) ( $this->options_main[ $key ]['pos_b'] );
-		$this->options_main[ $key ]['pos_l']          = (int) ( $this->options_main[ $key ]['pos_l'] );
 		$this->options_main[ $key ]['pos_t']          = (int) ( $this->options_main[ $key ]['pos_t'] );
+		$this->options_main[ $key ]['pos_l']          = (int) ( $this->options_main[ $key ]['pos_l'] );
 		$this->options_main[ $key ]['pos_r']          = (int) ( $this->options_main[ $key ]['pos_r'] );
 		$this->options_main[ $key ]['width']          = absint( $this->options_main[ $key ]['width'] );
 		$this->options_main[ $key ]['height']         = absint( $this->options_main[ $key ]['height'] );
@@ -242,14 +242,15 @@ class Options extends Base implements Service {
 	 * Sanitize position value.
 	 *
 	 * @param string $pos Position value.
+	 * @param string $key Key name.
 	 *
 	 * @return string
 	 */
-	public function sanitize_pos( $pos ) {
+	public function sanitize_pos( $pos, $key = 'front' ) {
 		if ( \in_array( $pos, array( 'bl', 'br', 'tl', 'tr' ), true ) ) {
 			return $pos;
 		}
 
-		return $this->get_default_main( 'front' )['pos'];
+		return $this->get_default_main( $key )['pos'];
 	}
 }
